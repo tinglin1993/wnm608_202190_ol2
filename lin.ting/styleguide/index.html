@@ -70,7 +70,7 @@
  				  <h1>heading 1</h1>
  				  <h2>heading 2</h2>
  				  <h3>heading 3</h3>
- 			  	<h4>heading 4</h4>
+ 			 	  <h4>heading 4</h4>
  				  <h5>heading 5</h5>
  				  <h6>heading 6</h6>
  		  	</div>	
@@ -223,7 +223,7 @@
 
 <!-- GRID SYSTEM ---------------------------------------------------->
 
-    <div class="container" id="gridsyste">
+    <div class="container" id="gridsystem">
         <h2>Grid System</h2>
     </div>
 
@@ -234,29 +234,29 @@
 	  </div>
 
 <script>
-const makeTable = (classes = '') => {
-  const head = ['ID', 'Office', 'Name', 'Email', 'Phone'];
-  const body = [
-    ['522', 'Hamilton Cline', 'hcline@academyart.edu', '555-2424'],
-    ['512', 'Fred McHale', 'fmchale@academyart.edu', '555-2424'],
-    ['522', 'Michael Catanzaro', 'mcatanzaro@academyart.edu', '555-2424'],
-    ['514', 'Andrea Pimentel', 'apimentel@academyart.edu', '555-2424'],
-    ['516', 'DE Scarpelli', 'dscarpelli@academyart.edu', '555-2424'],
-  ];
+ const makeTable = (classes = '') => {
+            const head = ['', 'ID', 'Name', 'Email', 'Phone'];
+            const body = [
+   			    ['322','Joey Li','Joey@aau.edu','912-000-1234'],
+				['323','Leo Si','leo@aau.edu','912-000-2345'],
+				['324','Ming Xiao','ming@aau.edu','912-000-3456'],
+				['325','Nick Stone','nick@aau.edu','912-000-4567'],
+				['326','Yurica Lancer','yurica@aau.edu','912-000-5678'],
+            ];
+
 
   //let ran= math.floor(math.random()*Links.Length);
 	document.write(`
-    <table class="${classes}">
-      <thead><tr>${head.reduce((r, o) => r+ `<th>${o}</th>`, '')}</tr></thead>
-      <tbody>${body.reduce((r, o, i) => r+ 
-      	`<tr>${
-            [i+1,...o].reduce((r, o) => r+ `<td>${o}</td>`, '')
-		}</tr>`, '')
-      }</tbody>
-    </table>
-  `);
-}
-</script>
+            <table class="${classes}">
+                <thead><tr>${head.reduce((r, o) => r + `<th>${o}</th>`, '')}</tr></thead>
+                <tbody>${body.reduce((r, o, i) => r +
+                `<tr>${[i + 1, ...o].reduce((r, o) => r + `<td>${o}</td>`, '')
+                }</tr>`, '')
+                }</tbody>
+            </table>
+            `);
+        }
+	</script>
 
 <!-- TABLES ---------------------------------------------------->
 
@@ -272,7 +272,7 @@ const makeTable = (classes = '') => {
 <div class="card soft">
   <h3>Striped Table</h3>
   <script>makeTable("table striped")</script>
-  </div>
+</div>
 
 <div class="card soft">
   <h3>Striped Lined Vertical</h3>
@@ -461,8 +461,6 @@ const makeTable = (classes = '') => {
 <div class="container" id="checkboxes">
    <h2>Check boxes</h2>
 
-    <h2 id="checkboxes">Check Boxes</h2>
-
 						<div class="card soft">
 								<label>Label <input type="checkbox" id="input-1"></label>
 								<label for="input-1">Label</label>
@@ -484,12 +482,11 @@ const makeTable = (classes = '') => {
 				  <label for="toggle-1"></label>
 			</div>
 				  <div class="display-flex flex-align-center">
-					  <div class="flex-stretch">
-					  <label for="toggle-2"class="form-label">Display Warning?</label>
-					</div>
-
-					<div class="flex-none"></div>
-					<div class="toggle"style="font-size:2em">
+					<div class="flex-stretch">
+				     <label for="toggle-2" class="form-label">Display Warning?</label>
+			        </div>
+					<div class="flex-none">
+					<div class="toggle" style="font-size:2em">
 						<input type="checkbox"id="toggle-2"class="hidden">
 						<label for="toggle-2"></label>
 					 </div>
@@ -500,103 +497,105 @@ const makeTable = (classes = '') => {
 
 <!-- FIGURES ---------------------------------------------------->
 
-<div class="container" id="figures">
-   <h2>Figures</h2>
-
-	<div class="card">		
-		<h3>Basic Figure</h3>
+<div class="container" id="tables">
+		<h2>Figures</h2>
+		<div class="card soft">
+			<h3>Basic Figure</h3>
 			<figure class="figure">
-				<img src="https://via.placeholder.com/400x400?text=product" alt="">
-				<figcaption>Product</figcaption>
-		</figure>
-</div>
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption>Product</figcaption>
+			</figure>
+
+			
+		</div>
 
 <!------------------------------------------------>
 
 <h3>Figure Grid</h3>
 <div class="grid gap">
-	<div class="col-xs-12 col-md-4">
-		<figure class="figure">
-				 <img src="https://via.placeholder.com/400x400?text=product">
-				 <figcaption>Product</figcaption>
-			</figure>
-	</div>
-<div class="col-xs-12 col-md-4">
-		<figure class="figure">
-				 <img src="https://via.placeholder.com/400x400?text=product">
-				 <figcaption>Product</figcaption>
-			</figure>
-	</div>
-<div class="col-xs-12 col-md-4">
-		<figure class="figure">
-				 <img src="https://via.placeholder.com/400x400?text=product">
-				 <figcaption>Product</figcaption>
-			</figure>
-	</div>
-</div>
+				<div class="col-xs-12 col-md-4">
+					<figure class="figure">
+					<img src="https://via.placeholder.com/400x400?text=product" alt="">
+					<figcaption>Product</figcaption>
+				</div>
+				<div class="col-xs-12 col-md-4">
+					<figure class="figure">
+					<img src="https://via.placeholder.com/400x400?text=product" alt="">
+					<figcaption>Product</figcaption>
+				</div>
+				<div class="col-xs-12 col-md-4">
+					<figure class="figure">
+					<img src="https://via.placeholder.com/400x400?text=product" alt="">
+					<figcaption>Product</figcaption>
+				</div>
+			</div>
 
 <!------------------------------------------------>
 
 <h3>Product Grid</h3>
 	<div class="grid gap">
-		<div class="col-xs-12 col-md-4">
-			<figure class="figure product">
-				<img src="https://via.placeholder.com/400x400?text=product" alt="">
-				<figcaption>
-					<div>Product Name</div>
-					<div>$3.99</div>
-				</figcaption>	
-			</figure>
-		</div>
-		<div class="col-xs-12 col-md-4">
-			<figure class="figure product">
-				<img src="https://via.placeholder.com/400x400?text=product" alt="">
-				<figcaption>
-					<div>Product Name</div>
-					<div>$3.99</div>
-			</figure>
-		</div>
-		<div class="col-xs-12 col-md-4">
-			<figure class="figure product">
-				<img src="https://via.placeholder.com/400x400?text=product" alt="">
-				<figcaption>
-					<div></div>
-					<div>Product Name</div>
-					<div>$3.99</div>
+				<div class="col-xs-12 col-md-4">
+					<figure class="figure product">
+					<img src="https://via.placeholder.com/400x400?text=product" alt="">
+					<figcaption>
+						<div>Rings</div>
+						<div>$299</div>
+					</figcaption>
 				</div>
-			</figurecaption>
-		</figure>
-	</div>
-</div>
+				<div class="col-xs-12 col-md-4">
+					<figure class="figure product">
+					<img src="https://via.placeholder.com/400x400?text=product" alt="">
+					<figcaption>
+						<div>Necklace</div>
+						<div>$499</div>
+					</figcaption>
+				</div>
+				<div class="col-xs-12 col-md-4">
+					<figure class="figure product">
+					<img src="https://via.placeholder.com/400x400?text=product" alt="">
+					<figcaption>
+						<div>Bracelets</div>
+						<div>$399</div>
+					</figcaption>
+				</div>
+			</div>
 
 <!------------------------------------------------>
 
 <h3>Product Overlay</h3>
-	<div class="grid gap">
-		<div class="col-xs-12 col-md-4">
-			<figure class="figure product-overlay">
-				<img src="https://via.placeholder.com/400x400?text=product" alt="">
-				<figcaption>
-					<div class="caption-body">
-				</figcaption>	
-			</figure>
-		</div>
-		<div class="col-xs-12 col-md-4">
-			<figure class="figure product-overlay">
-				<img src="https://via.placeholder.com/400x400?text=product" alt="">
-				<figcaption>
-					<div class="caption-body">
-			</figure>
-		</div>
-		<div class="col-xs-12 col-md-4">
-			<figure class="figure product-overlay">
-				<img src="https://via.placeholder.com/400x400?text=product" alt="">
-				<figcaption>
-					<div class="caption-body">
-			</figure>
-		</div>
+<div class="col-xs-12 col-md-4">
+					<figure class="figure product-overlay">
+					<img src="https://via.placeholder.com/400x400?text=product" alt="">
+					<figcaption>
+						<div class="caption-body">
+							<div>Rings</div>
+							<div>$299</div>
+						</div>
+					</figcaption>
+				</div>
+				<div class="col-xs-12 col-md-4">
+					<figure class="figure product-overlay">
+					<img src="https://via.placeholder.com/400x400?text=product" alt="">
+					<figcaption>
+						<div class="caption-body">
+							<div>Necklace</div>
+							<div>$499</div>
+						</div>
+					</figcaption>
+				</div>
+				<div class="col-xs-12 col-md-4">
+					<figure class="figure product-overlay">
+					<img src="https://via.placeholder.com/400x400?text=product" alt="">
+					<figcaption>
+						<div class="caption-body">
+							<div>Bracelets</div>
+							<div>$399</div>
+						</div>
+					</figcaption>
+				</div>
+			</div>		
+		
 	</div>
-</div>
 
 
 </body>
