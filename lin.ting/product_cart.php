@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>FLUFFY</title>
+    <title>Cart</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cart.css">
+    
     <?php include "parts/web_meta.php"; ?>
 </head>
 <body>
-    <?php include "parts/header.php"; ?>
+    <?php include "parts/navbar.php"; ?>
     <header>
         <div class="container">
             <a href="index.html" class="logo">
@@ -22,6 +23,7 @@
                     <li><a href="aboutus.php">About Us</a></li>
                 </ul>
             </nav>
+
             <div class="cart">
                 <a href="product_cart.php">
                     <img src="img/cart.png">
@@ -91,8 +93,9 @@
                 <p>$49.98</p>
             </div>
 
+
             <div class="checkout">
-                <a href="#" class="button">Checkout</a>
+                <a href="product_checkout.php" class="button">Checkout</a>
             </div>
         </div>
     </main>
