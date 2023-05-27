@@ -1,0 +1,38 @@
+[
+	{
+       "name":"Ting Lin",
+       "type":"Student",
+       "email":"ting.lin@gmail.com",
+       "classes":[608,605,613]
+	},
+	{
+       "name":"Kenny Chen",
+       "type":"Superman",
+       "email":"kennychen@gmail.com",
+       "classes":[608,605,613]
+	},
+	{
+       "name":"Aisha Lin",
+       "type":"Designer",
+       "email":"aishalin@gmail.com",
+       "classes":[608,605,613]
+	},
+	{
+       "name":"Maggie Liu",
+       "type":"mother",
+       "email":"maggieliu.com",
+       "classes":[608,605,613]
+	},
+	{
+       "name":"Nini Xie",
+       "type":"model",
+       "email":"ninixie@gmail.com",
+       "classes":[608,605,613]
+	},
+	{
+       "name":"Anna Shu",
+       "type":"chef",
+       "email":"annashu@gmail.com",
+       "classes":[608]
+	}
+]
